@@ -1,0 +1,42 @@
+package com.mapping;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Sample
+
+{
+	@Id
+    private int id;
+    private String name;
+    private String Colour;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getColour() {
+		return Colour;
+	}
+	public Sample() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Sample(int id, String name, String colour) {
+		super();
+		this.id = id;
+		this.name = name;
+		Colour = colour;
+	}
+	public void setColour(String colour) {
+		Colour = colour;
+	}
+}

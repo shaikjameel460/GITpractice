@@ -1,0 +1,55 @@
+package com.mapping;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class MappingDemo 
+{
+    public static void main(String[] args) 
+    
+    {
+    	System.out.println( "project Started" );
+        Configuration cfg=new Configuration();
+        cfg.configure("hibernate.cfg.xml");
+        SessionFactory factory=cfg.buildSessionFactory();
+        
+        //Creating Student object
+        Student s1=new Student();
+        s1.setId(33);
+        s1.setMarks(95);
+        s1.setName("Hameed");
+        
+        Student s2=new Student();
+        s1.setId(33);
+        s1.setMarks(95);
+        s1.setName("Hameed");
+        
+        Laptop l1=new Laptop();
+        l1.setLid(34);
+        l1.setLname("Apple");
+        
+        Laptop l2=new Laptop();
+        l1.setLid(34);
+        l1.setLname("Apple");
+        
+        List<Laptop> list=new ArrayList<Laptop>();
+        list.add(l2);
+        list.add(l2);
+        
+        s1.setLaptops(list);
+        
+        Session s=factory.openSession();
+        Transaction tx=s.beginTransaction();
+        
+        s.save(s1);
+        s.save(l1);
+        tx.commit();
+        
+        factory.close();
+	}
+}

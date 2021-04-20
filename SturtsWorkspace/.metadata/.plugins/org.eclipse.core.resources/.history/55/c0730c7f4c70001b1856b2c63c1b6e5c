@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration SYSTEM
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://Localhost:3306/myhiber</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">sjameel_ahamed@460</property>
+		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hbm2ddl.auto">create</property>
+		<property name="show_sql">true</property>
+		<mapping class="com.mapping.Laptop"></mapping>
+		<mapping class="com.mapping.Student"></mapping>
+		
+	</session-factory>
+</hibernate-configuration>
+
+
+<h1>www.xyz.in</h1>
+	<h1>Registration page</h1>
+	<s:form action="register">
+		<s:textfield name="name" label="UserName"></s:textfield>
+		<s:password name="password" label="Password"></s:password>
+		<s:textfield name="email" label="Email"></s:textfield>
+		<s:radio list="{'male','female'}" name="gender"></s:radio>
+		
+
+		<s:submit value="register"></s:submit>
+
+	</s:form>

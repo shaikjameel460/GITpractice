@@ -1,0 +1,6 @@
+package com.tut;
+import com.opensymphony.xwork2.ActionSupport;
+
+public class Linkaction2 extends Actionsupport {
+
+}

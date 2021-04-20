@@ -1,0 +1,19 @@
+package com.tut;
+import com.opensymphony.xwork2.ActionSupport;
+
+public class Linkaction2 extends Actionsupport {
+
+	private static final long serialVersionUID = 1L;
+
+	public String welcome() {
+		return "welcome";		
+	}
+
+	public String friends() {
+		return "friends";		
+	}
+
+	public String office() {
+		return "office";		
+	}
+}

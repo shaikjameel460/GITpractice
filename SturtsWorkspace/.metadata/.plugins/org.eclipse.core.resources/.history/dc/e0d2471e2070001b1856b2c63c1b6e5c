@@ -1,0 +1,22 @@
+package com.cascading;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class Cascade 
+
+{
+	System.out.println("project started");
+	Configuration cfg = new Configuration();
+	cfg.configure("hibernate.cfg.xml");
+	SessionFactory factory = cfg.buildSessionFactory();
+	Session s = factory.openSession();
+	Transaction tx = s.beginTransaction();
+
+	tx.commit();
+
+	factory.close();
+
+}

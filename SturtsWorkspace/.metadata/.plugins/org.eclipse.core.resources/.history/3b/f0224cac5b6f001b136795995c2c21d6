@@ -1,0 +1,8 @@
+package com.example.ProjectWithMaven;
+
+public class Certificate
+
+{
+    private String couse;
+    private String duration;
+}

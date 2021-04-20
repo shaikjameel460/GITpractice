@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+   <package name="default" extends="struts-default">
+      <result-types>
+         <result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
+      </result-types>
+       <action name="*Link" method="{1}" class="com.jcg.struts2.tiles.LinkAction">
+         <result name="welcome" type="tiles">welcome</result>
+         <result name="friends" type="tiles">friends</result>
+         <result name="shopping" type="tiles">shopping</result>
+         <result name="office" type="tiles">office</result>
+          <result name="link1" type="tiles">link1</result>
+           <result name="link2" type="tiles">link2</result>
+           <result name="link3" type="tiles">link3</result>
+           <result name="link4" type="tiles">link4</result>
+           <result name="link5" type="tiles">link5</result>
+           <result name="action1" type="tiles">action1</result>
+           <result name="action2" type="tiles">action2</result>
+           <result name="submenu" type="tiles">submenu</result>
+           <result name="submenu0" type="tiles">submenu0</result>
+           
+            <result name="subsubmenu1" type="tiles">subsubmenu1</result>
+             <result name="subsubmenu11" type="tiles">subsubmenu11</result>
+              <result name="subsubmenu2" type="tiles">subsubmenu2</result>
+               <result name="subsubmenu22" type="tiles">subsubmenu22</result>
+            
+      </action> 
+      
+   </package>
+</struts>

@@ -1,0 +1,8 @@
+package com.mapping;
+
+public class Laptop 
+
+{
+      private int lid;
+      private String lname;
+}

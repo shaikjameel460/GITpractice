@@ -1,0 +1,31 @@
+package com.cascade;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+import org.hibernate.cfg.Configuration;
+
+public class CascadeDemo 
+{
+ public static void main(String[] args) 
+ {
+	 System.out.println("project Started");
+		Configuration cfg = new Configuration();
+		cfg.configure("hibernate.cfg.xml");
+		SessionFactory factory = cfg.buildSessionFactory();
+		Session s = factory.openSession();
+		Transaction tx = s.beginTransaction();
+		
+		Student s1=new Student();
+		s1.setId(101);
+		s1.setMarks(460);
+		s1.setName("ashwin");
+		
+		Laptop l1=new Laptop(123,"HP");
+		laptop l2=new Laptop(456,"Lenovo")
+
+		tx.commit();
+
+		factory.close();
+}
+}

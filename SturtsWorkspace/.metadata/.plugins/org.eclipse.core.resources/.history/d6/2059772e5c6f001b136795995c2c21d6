@@ -1,0 +1,22 @@
+package com.example.ProjectWithMaven;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+public class EmbedDemo 
+ {
+  public static void main(String[] args) 
+  {
+	  System.out.println( "Project Started" );
+      Configuration cfg=new Configuration();
+      cfg.configure("hibernate.cfg.xml");
+      SessionFactory factory=cfg.buildSessionFactory();
+      
+      //creating a student object
+      
+      
+      
+      
+      factory.close();
+}
+}

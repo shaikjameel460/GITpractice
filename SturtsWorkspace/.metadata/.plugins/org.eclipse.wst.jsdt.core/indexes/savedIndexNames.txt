@@ -1,0 +1,11 @@
+INDEX VERSION 1.4+E:\SturtsWorkspace\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2316381899.index
+2830381411.index
+1980505442.index
+3078987999.index
+2446798781.index
+1439588391.index
+2947023932.index
+437027214.index
+1601545288.index
+2050093880.index
